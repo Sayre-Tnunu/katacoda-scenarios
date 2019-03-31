@@ -6,14 +6,7 @@
         "code": "foreground.sh",
         "text": "intro.md"
       },
-      "assets": {
-            "host01": [
-        {
-          "file": "ansible.yml",
-          "target": "~/"
-        }
-      ]
-    },
+
     "steps": [
       {
         "title": "Step 1",
@@ -25,6 +18,14 @@
       }
     ]
   },
+  "assets": {
+  "host01": [
+    {
+      "file": "ansible.yml",
+      "target": "~/"
+    }
+  ]
+},
   "environment": {
     "uilayout": "terminal"
   },
