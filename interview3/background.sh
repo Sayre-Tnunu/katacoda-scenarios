@@ -8,4 +8,4 @@ git clone https://github.com/DataDog/ansible-datadog-callback.git
 cd datadogpy && chmod +x setup.py
 python setup.py install && cd ..
 pip install pyyaml
-cp ansible-datadog-callback/datadog_callback.py call_plugins/
+cp ansible-datadog-callback/datadog_callback.py callback_plugins/
