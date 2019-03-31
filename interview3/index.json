@@ -12,7 +12,12 @@
         "file": "ansible.yml",
         "target": "~/"
       }
+      {
+        "file": "hosts",
+        "target": "~/"
+      }
     ]
+
   },
 
     "steps": [
