@@ -3,14 +3,22 @@
   "details": {
       "intro": {
         "courseData": "background.sh",
-        "code": "foreground.sh", 
+        "code": "foreground.sh",
         "text": "intro.md"
       },
+      "assets": {
+            "host01": [
+        {
+          "file": "ansible.yml",
+          "target": "~/"
+        }
+      ]
+    },
     "steps": [
       {
-        "title": "Step 1", 
+        "title": "Step 1",
         "text": "step1.md"
-      }, 
+      },
       {
         "title": "Step 2",
         "text": "step2.md"
