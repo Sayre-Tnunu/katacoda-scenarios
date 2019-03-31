@@ -7,13 +7,12 @@
         "text": "intro.md"
       },
       "assets": {
-    "host01": [
+        "host01": [
       {
-        "file": "*",
+        "file": "ansible.yml",
         "target": "~/"
       }
     ]
-
   },
 
     "steps": [
