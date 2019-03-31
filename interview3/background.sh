@@ -9,3 +9,4 @@ cd datadogpy && chmod +x setup.py
 python setup.py install && cd ..
 pip install pyyaml
 cp ansible-datadog-callback/datadog_callback.py callback_plugins/
+ansible datadog -i hosts --list | ./update-host-key.sh
