@@ -18,7 +18,7 @@
       }
     ]
   },
-"assets": { "host01": [ {"file": "interview3/ansible.yml", "target": "~/"} ] },
+"assets": { "host01": [ {"file": "ansible.yml", "target": "~/"} ] },
   "environment": {
     "uilayout": "terminal"
   },
