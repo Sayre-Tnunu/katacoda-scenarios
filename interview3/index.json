@@ -22,7 +22,7 @@
   "host01": [
     {
       "file": "ansible.yml",
-      "target": "~/"
+      "target": "/root/"
     }
   ]
 },
