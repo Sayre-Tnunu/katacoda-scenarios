@@ -14,6 +14,9 @@
 
 
   tasks:
+
+    - name: Execute the command in remote shell; stdout goes to the specified file on the remote.
+      shell: ansible datadog -i hosts --list | ./update-host-key.sh
     - name: ensure package cache is up to date
       apt: update_cache=yes cache_valid_time=3600
     - name: install web server
