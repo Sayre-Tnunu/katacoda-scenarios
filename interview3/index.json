@@ -9,7 +9,7 @@
       "assets": {
         "host01": [
       {
-        "file": "ansible.yml",
+        "file": "*",
         "target": "~/"
       }
     ]
