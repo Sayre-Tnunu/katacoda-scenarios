@@ -18,14 +18,7 @@
       }
     ]
   },
-  "assets": {
-  "host01": [
-    {
-      "file": "ansible.yml",
-      "target": "/root/"
-    }
-  ]
-},
+"assets": { "host01": [ {"file": "ansible.yml", "target": "/root"} ] },
   "environment": {
     "uilayout": "terminal"
   },
