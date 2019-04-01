@@ -1,0 +1,7 @@
+#api_key: DD_API_KEY
+api_key: 471f90bc89bedc40f9878b013780d1e3
+
+# optionally to send data to Datadog EU add the following setting
+#site: datadoghq.eu
+#optionally to send data to a custom URL add the following setting
+#url: <custom URl>
