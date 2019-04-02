@@ -1,2 +1,2 @@
 #api_key: 176e52755f742bea25ff1f0bb6ff9bfc
-api_key: ${api_key}
+api_key: '${api_key}'
