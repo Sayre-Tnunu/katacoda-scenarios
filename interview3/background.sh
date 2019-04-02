@@ -11,3 +11,4 @@ cd datadogpy && chmod +x setup.py
 python setup.py install && cd ..
 pip install pyyaml
 cp ansible-datadog-callback/datadog_callback.py callback_plugins/
+chmod +x launch-datadog.sh
