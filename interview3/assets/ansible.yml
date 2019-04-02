@@ -1,26 +1,30 @@
 ---
 
 - hosts: datadog # in this case I am not using local host
-                    # I am specifying the group on my hosts file called 'webservers'
+                    # I am specifying the group on my hosts file called 'datadog'
                     # all the tasks below will be done using those server's resources
 
   #become: true # elevate the ansible_ssh_user's privileges to root (password-less)
 
   vars: # variables can be anything, but there are some specific ones to use like ansible_ssh_user, etc...
-    myteam: sayre-and-jacob-team # change this to your team name!!!
+    myteam: anthony-and-son-team # change this to your team name!!!
     #ansible_ssh_user: ec2-user # ec2-user is the default user that comes with image:"ami-4836a428"
                                # this will get used when the playbook connects to your aws servers through ssh
     #ansible_ssh_private_key_file: datadog.pem # instead of giving an ssh password, the playbook will pass the .pem file (same one used to create the aws servers) for authorization
-
-
   tasks:
 
-    - name: ensure package cache is up to date
-      apt: update_cache=yes cache_valid_time=3600
-    - name: install web server
-      apt: pkg=apache2 state=present
+  - name: export variables and launch datadog
+    shell: export ANSIBLE_DATADOG_CALLBACK_CONF_FILE=datadog_callback.yml && \
+           export api_key=$api_key && \
+           export DD_API_KEY=$api_key && \
+           #export DD_API_KEY=471f90bc89bedc40f9878b013780d1e3 && \
+           bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)"
 
-  tasks: # all playbooks have tasks
+  - name: ensure package cache is up to date
+    apt: update_cache=yes cache_valid_time=3600
+
+  - name: install web server
+    apt: pkg=apache2 state=present
 
   - name: ensure package cache is up to date
     apt: update_cache=yes cache_valid_time=3600
