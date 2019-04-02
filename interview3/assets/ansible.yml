@@ -13,14 +13,6 @@
     #ansible_ssh_private_key_file: datadog.pem # instead of giving an ssh password, the playbook will pass the .pem file (same one used to create the aws servers) for authorization
   tasks:
 
-  - name: export variables and launch datadog
-    shell: export ANSIBLE_DATADOG_CALLBACK_CONF_FILE=datadog_callback.yml && \
-           export api_key=$api_key && \
-           #./launch-datadog
-           #export DD_API_KEY=$api_key && \
-           #export DD_API_KEY=471f90bc89bedc40f9878b013780d1e3 && \
-           #bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)"
-           #ansible-playbook -i hosts ansible.yml --ask-vault-pass
   - name: ensure package cache is up to date
     apt: update_cache=yes cache_valid_time=3600
 
