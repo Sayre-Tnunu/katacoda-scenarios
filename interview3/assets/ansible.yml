@@ -14,7 +14,6 @@
 
     myteam: anthony-and-son-team # change this to your team name!!!
     #ansible_ssh_user: ec2-user # ec2-user is the default user that comes with image:"ami-4836a428"
-    DD_API_KEY:
 
   tasks:
 
