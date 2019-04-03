@@ -1,3 +1,15 @@
+# interview3 notes
+
+
+
+
+
+
+
+
+
+
+---
 # Interactive Katacoda Scenarios
 
 [![](http://shields.katacoda.com/katacoda/asayre/count.svg)](https://www.katacoda.com/asayre "Get your profile on Katacoda.com")
