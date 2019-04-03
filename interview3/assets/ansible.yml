@@ -1,4 +1,8 @@
 ---
+# Before running this playbook, run this command in the terminal:
+# export api_key=XXXXXXXXXxxxxxXXXXxxXxxXXxXxXXxX
+# (insert your own api key from your datadog env)
+# (from the events home page of your dash-baord, left side menu bar, hover over 'integrations' and select 'APIs')
 
 - hosts: datadog # in this case I am not using local host
                     # I am specifying the group on my hosts file called 'datadog'
