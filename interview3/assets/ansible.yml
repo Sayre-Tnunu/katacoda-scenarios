@@ -18,7 +18,7 @@
   tasks:
 
   - name: launch datadog agent
-    shell: DD_API_KEY="{{ lookup('env','api_key') }}" bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)" && \
+    shell: DD_API_KEY="{{ lookup('env',api_key) }}" bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)" && \
 
   - name: ensure package cache is up to date
     apt: update_cache=yes cache_valid_time=3600
