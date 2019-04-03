@@ -1,8 +1,12 @@
-#replace <your api key> with your actual api key and then
-#run both of the commands in your bash shell
-#example:
-#export api_key=21980214k02qkdw9ef93jof9f0jfp39f
-
+# INSTRUCTIONS:
+#
+# replace <your api key> with your actual Datadog api key and then
+# run both of the commands in your bash shell
+#
+# example:
+# export api_key=21980214k02qkdw9ef93jof9f0jfp39f
+#
+# MANUAL BASH COMMANDS TO RUN:
 
 export api_key=<your api key>
 echo "api_key: ""$api_key" > datadog_callback.yml
