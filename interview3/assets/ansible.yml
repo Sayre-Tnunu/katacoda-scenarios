@@ -5,6 +5,7 @@
 # (from the events home page of your dash-baord, left side menu bar, hover over 'integrations' and select 'APIs')
 
 - hosts: localhost
+  connection: local
 
   tasks:
 
@@ -13,7 +14,7 @@
 
 
 - hosts: datadog # in this case I am not using local host
-                    # I am specifying the group on my hosts file called 'datadog'
+  connection: ssh # I am specifying the group on my hosts file called 'datadog'
                     # all the tasks below will be done using those server's resources
 
   #become: true # elevate the ansible_ssh_user's privileges to root (password-less)
