@@ -14,11 +14,12 @@
 
     myteam: anthony-and-son-team # change this to your team name!!!
     #ansible_ssh_user: ec2-user # ec2-user is the default user that comes with image:"ami-4836a428"
-    DD_API_KEY: "{{lookup('env','api_key')}}"
+    DD_API_KEY:
+
   tasks:
 
   - name: launch datadog agent
-    shell: bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)" && \
+    shell: DD_API_KEY="{{lookup('env','api_key')}}" bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)"
 
   - name: ensure package cache is up to date
     apt: update_cache=yes cache_valid_time=3600
