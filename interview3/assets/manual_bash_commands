@@ -1,7 +1,7 @@
 # INSTRUCTIONS:
 #
-# replace <your api key> with your actual Datadog api key and then
-# run both of the commands in your bash shell
+# replace <your api key> with your actual Datadog api key in first command below and then
+# run all 3 commands in your bash shell
 #
 # example:
 # export api_key=21980214k02qkdw9ef93jof9f0jfp39f
