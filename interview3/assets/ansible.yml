@@ -4,14 +4,13 @@
 # (insert your own api key from your datadog env)
 # (from the events home page of your dash-baord, left side menu bar, hover over 'integrations' and select 'APIs')
 
-- hosts: localhost
-  connection: local
+#- hosts: localhost # instead of referencing a group in a hosts file, I am referencing the local ansible host machine
+#  connection: local # instead of referencing ssh, I am referencing local connection type, so the following tasks happen directly on your local machine
 
-  tasks:
+#  tasks:
 
-  - name: launch datadog agent
-    shell: DD_API_KEY="{{ lookup('env','api_key') }}" bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)"
-
+#  - name: launch datadog agent
+#    shell: DD_API_KEY="{{ lookup('env','api_key') }}" bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)"
 
 - hosts: datadog # in this case I am not using local host
   connection: ssh # I am specifying the group on my hosts file called 'datadog'
@@ -25,6 +24,9 @@
     #ansible_ssh_user: ec2-user # ec2-user is the default user that comes with image:"ami-4836a428"
 
   tasks:
+
+  - name: launch datadog agent
+    shell: DD_API_KEY="{{ lookup('env','api_key') }}" bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)"
 
   - name: ensure package cache is up to date
     apt: update_cache=yes cache_valid_time=3600
