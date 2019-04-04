@@ -10,4 +10,4 @@
 
 export api_key=<your api key>
 echo "api_key: ""$api_key" > datadog_callback.yml
-ansible-playbook -i hosts ansible.yml
+ansible-playbook -i hosts ansible.yml -vv
