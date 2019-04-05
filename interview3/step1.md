@@ -7,6 +7,6 @@ INSTRUCTIONS:
   - copy the long alphanumeric number under "Key"
 
 
-  replace <your api key> in the below command with your actual Datadog api key, run it
+  replace <your api key> in the below command with your actual Datadog api key, run it in your training terminal
 
   - `export api_key=<insertyourapikeyhere>`
