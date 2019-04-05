@@ -7,7 +7,6 @@
 
 - **requirements:**
   * basic linux command line
-  * Gedit or other text editor recommend
   * datadog account or trial instance with dashboard and api key
 
 
