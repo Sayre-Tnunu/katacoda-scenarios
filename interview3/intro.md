@@ -7,17 +7,16 @@
 
 - **requirements:**
   * basic linux command line
-  * Gedit or other text program recommend
-  * datadog account or trial instance with dashboard and api key.
-  * get api key from your datadog dashboard
-    - hover over **Integrations**  on the left-side menu, click **APIs**
-    - click 'API Keys' dropdown on next page
-    - copy the long alphanumeric number under "Key"
+  * Gedit or other text editor recommend
+  * datadog account or trial instance with dashboard and api key
 
 
+[project repo]:
 
-[project link]:
-[github](https://github.com/Sayre-Tnunu/katacoda-scenarios)
+[github](https://github.com/Sayre-Tnunu/katacoda-scenarios/)
 
 [my links]:
-[gitlab](https://gitlab.com/asayre), [linkedin](https://www.linkedin.com/in/anthony-sayre-1a92263a/)
+
+[gitlab](https://gitlab.com/asayre)
+
+[linkedin](https://www.linkedin.com/in/anthony-sayre-1a92263a/)
