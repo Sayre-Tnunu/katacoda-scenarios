@@ -10,4 +10,4 @@
   * datadog account or trial instance with dashboard and api key.
   * get api key from this screen:
 
-    ![datadog-api-key](datadog-api-key_small.png)
+    ![datadog-api-key](datadog-api-key.jpg)
