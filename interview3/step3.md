@@ -13,11 +13,11 @@
 
   - under 'Graph your data', ensure that 'Metric' data type is selected, then click the drop-down next to 'Metric', you should see several new metrics/event triggers related to ansible
 
-  - review some of these in your dashboard
+  - create and review dashboard items with some of these
 
   **trigger an ansible failure**
 
-* if you haven't already, create a new metric for your time-board for this event:'ansible.task.failures'
+* if you haven't already, create a new item for your time-board for this event:'ansible.task.failures'
 
   - choose 'query value' visualization for step 1
   - choose 'ansible.task.failures'
