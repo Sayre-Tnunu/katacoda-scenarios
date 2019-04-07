@@ -20,9 +20,8 @@
 * if you haven't already, create a new metric for your time-board for this event:'ansible.task.failures'
 
   - choose 'query value' visualization for step 1
-
   - choose 'ansible.task.failures'
-  - next to that choose 'from playbook:ansible', save and
+  - next to that choose 'from playbook:ansible', save back to your dashboard
 
 
 * in the terminal, delete the jinja2 file: `rm datadog.html.j2`
@@ -31,7 +30,7 @@
 
 * this should trigger a failure as the ansible-playbook has a 'template' action as one of it's tasks which expects a jinja2 file to be there
 
-* review the event messages that pop up in your datadog dashboard Events stream
+* review the event messages that pop up in your datadog Events stream, go to the dash-board to review the number of failures
 
 done!
 
