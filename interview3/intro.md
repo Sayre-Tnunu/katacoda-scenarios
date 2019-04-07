@@ -10,7 +10,7 @@
   * datadog account or trial instance with dashboard and api key
 
 - **training environment:**
-  - Two ubuntu 16.04 instances [host01 and host02]
+  - Two ubuntu 16.04 instances [host01 and host02], using `/root/` home directory
   - foreground.sh file downloads and starts ansible as well as declares some variables
   - background.sh file sets up a directory for callback plugins, git clones datadog agent repo, and git clones ansible callback module repo, downloads python, runs the `setup.py` to activate the datadog_agent
 

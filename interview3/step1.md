@@ -16,15 +16,18 @@ Before moving to step2, **review the important files and directories** for this 
 
 in the training terminal, list the files in your current directory with `ls` command
 
-description of each file:
+notes on the files:
 
   * **ansible-datadog-callback (directory)**
-    contains the datadog_callback.py which reads and sends ansible metrics/events data to datadoghq. Set up for this environment should copy the datadog_callback.py file up to this home directory
+    contains the datadog_callback.py which reads and sends ansible metrics/events data to datadoghq. Set up for this environment should copy the ansible_datadog_callback.py file up to this home directory
 
+  * **datadog_callback.py**
+
+      A callback to send Ansible events and metrics to Datadog, uses the datadog agent: `cat ansible-datadog-callback/datadog_callback.py`
 
   * **datadog_callback.yml**
 
-    this file is read by the 'datadog_callback.py' to read your dd api key: `cat datadog_callback.yml`
+      is read by the 'datadog_callback.py' to read your dd api key: `cat datadog_callback.yml`
 
   * **datadogpy (directory)**
     contains the setup.py which reads and sends system metrics/events data to datadoghq (statsd)
