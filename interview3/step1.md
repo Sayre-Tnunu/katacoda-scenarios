@@ -7,7 +7,7 @@
 
   replace <your api key> in the below command with your actual Datadog api key, run it in your training terminal
 
-  - `export api_key=<insertyourapikeyhere>`
+  - `export DATADOG_API_KEY=<insertyourapikeyhere>`
 
   (HINT: cat the manual commands file `cat manual_bash_commands`, more info on that below)
 
