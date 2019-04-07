@@ -32,6 +32,9 @@
 
 * review the event messages that pop up in your datadog Events stream, go to the dash-board to review the number of failures
 
+* ALSO, review the preset Ansible dashboard - go to your list of dashboards (left-hand side menu, hover over 'Dashboards', click on 'Dashboard Lists', search for key-word 'ansible', click on 'Ansible' dashboard)
+
+
 done!
 
 [NEXT]: set up a monitor for your ansible.task.failures dashboard metrics, send custom notifications/alerts
