@@ -12,7 +12,7 @@
 - **training environment:**
   - Two ubuntu 16.04 instances [host01 and host02]
   - foreground.sh file downloads and starts ansible as well as declares some variables
-  - background.sh file sets up a directory for callback plugins, git clones datadog agent repo, and git clones ansible callback module repo, downloads python, runs the setup.py `./setup.py` to activate the datadog_agent
+  - background.sh file sets up a directory for callback plugins, git clones datadog agent repo, and git clones ansible callback module repo, downloads python, runs the `setup.py` to activate the datadog_agent
 
 
 [project repo]:
