@@ -1,4 +1,5 @@
 
+# run commands
 **Once the api_key variable has your actual api key in it (step1), you are ready to run the other two commands:**
 
   * write your api key to a file for datadog's callback feature to use:
