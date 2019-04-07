@@ -33,6 +33,6 @@
 
 * review the event messages that pop up in your datadog dashboard Events stream
 
-And you're done!
+done!
 
-[NEXT]: set up a monitor for your  ansible.task.failures dashboard metris, send custom notifications/alerts
+[NEXT]: set up a monitor for your ansible.task.failures dashboard metrics, send custom notifications/alerts
