@@ -9,6 +9,8 @@
 
     * playbook launches datadog agent on both running hosts in the environment (host01 and host02)
 
+    * playbook turns host01 and host02 into web servers (verify with `curl host02` command)
+
     * metrics/events/alerts from ansible activity related to your hosts is relayed to datadoghq through datadog_callback.yml
 
     * dashboards for ansible metrics can now be created
