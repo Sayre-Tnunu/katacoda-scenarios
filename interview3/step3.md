@@ -38,4 +38,4 @@
 done!
 
 
-[NEXT]: set up a monitor for your ansible.task.failures dashboard metrics, send custom notifications/alerts with more granular detail
+[NEXT]: set up a monitor for your ansible.task.failures dashboard metrics, send custom notifications/alerts about ansible failed tasks with more granular detail
