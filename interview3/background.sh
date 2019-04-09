@@ -3,7 +3,7 @@ apt-add-repository --yes --update ppa:ansible/ansible
 touch /root/test123
 mkdir callback_plugins
 apt-get install -y git python-pip
-#git clone https://github.com/DataDog/datadogpy.git
+git clone https://github.com/DataDog/datadogpy.git
 git clone https://github.com/DataDog/ansible-datadog-callback.git
 #git clone git@gitlab.com:asayre/datadog-ansible-vault.git
 
