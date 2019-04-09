@@ -9,5 +9,5 @@
 # MANUAL BASH COMMANDS TO RUN:
 
 export DATADOG_API_KEY=<your api key>
-echo "api_key: ""$DATADOG_API_KEY" > datadog_callback.yml
+#echo "api_key: ""$DATADOG_API_KEY" > datadog_callback.yml
 ansible-playbook -i hosts ansible.yml -vv
